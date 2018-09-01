@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="0dp"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:background="@android:color/holo_red_dark"
+        android:text="Hello World!"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:maxLines="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="0dp"
+        android:background="@android:color/holo_green_dark"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toTopOf="@+id/textViewBotton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResultado"
+        app:layout_constraintVertical_bias="0.359">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#33e55a">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:layout_margin="0dp"
+                android:onClick="numero"
+                android:padding="0dp"
+                android:text="7"
+                android:background="@drawable/boton_redondo"/>
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="numero"
+                android:text="8"
+                android:background="@drawable/boton_redondo" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="numero"
+                android:text="9"
+                android:background="@drawable/boton_redondo" />
+
+            <Button
+                android:id="@+id/buttonAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="operacion"
+                android:text="+"
+                android:background="@drawable/boton_redondo"/>
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#b633e5">>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="numero"
+                android:text="4"
+                android:background="@drawable/boton_redondo"/>
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="numero"
+                android:background="@drawable/boton_redondo"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="numero"
+                android:text="6"
+                android:background="@drawable/boton_redondo"/>
+
+            <Button
+                android:id="@+id/buttonSub"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="-"
+                android:onClick="operacion"
+                android:background="@drawable/boton_redondo2"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#89a1aa">>
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="numero"
+                android:text="1"
+                android:background="@drawable/boton_redondo"/>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="numero"
+                android:text="2"
+                android:background="@drawable/boton_redondo"/>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="numero"
+                android:text="3"
+                android:background="@drawable/boton_redondo" />
+
+            <Button
+                android:id="@+id/buttonDiv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="/"
+                android:onClick="operacion"
+                android:background="@drawable/boton_redondo2"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#e5d033">>
+
+            <Button
+                android:id="@+id/button0"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="numero"
+                android:text="0"
+                android:background="@drawable/boton_redondo"/>
+
+            <Button
+                android:id="@+id/buttonCE"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_span="2"
+                android:onClick="ce"
+                android:text="CE"
+                android:background="@drawable/boton_redondo2"/>
+
+            <Button
+                android:id="@+id/buttonMul"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="*"
+                android:onClick="operacion"
+                android:background="@drawable/boton_redondo2"
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#e5d033">>
+
+            <Button
+                android:id="@+id/buttonEqu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_span="4"
+                android:background="@drawable/boton_edondo3"
+                android:onClick="operacion"
+                android:text="="
+                android:textSize="@android:dimen/app_icon_size" />
+
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textViewBotton"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_margin="0dp"
+        android:background="@android:color/holo_blue_bright"
+        android:text="TextView"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</android.support.constraint.ConstraintLayout>

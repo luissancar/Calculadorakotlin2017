@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="string_error_division">Error, división por 0</string>
+</resources>
