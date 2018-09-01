@@ -2,6 +2,8 @@ package com.example.luissancar.calculadora
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import kotlinx.android.synthetic.main.activity_main.*
@@ -46,6 +48,20 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+    override fun onSaveInstanceState(outState: Bundle?) {
+        super.onSaveInstanceState(outState)
+        val b=5
+        outState?.putString("numero",textViewResultado.text.toString())
+        Log.i("TAG","ddddd")
+
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle?) {
+        super.onRestoreInstanceState(savedInstanceState)
+        val numero = savedInstanceState?.getString("numero")
+        Log.i("TAG",numero.toString())
+        textViewResultado.text=numero.toString()
+    }
     fun ce(v : View){
         operando=false
         cambioNumero=false
