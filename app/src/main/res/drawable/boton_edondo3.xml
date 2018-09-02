@@ -5,7 +5,7 @@
 
 
     <!--- color y grosor del borde -->
-    <stroke android:width="20dp"
+    <stroke android:width="5dp"
         android:color="#ffff00"/>
 
 

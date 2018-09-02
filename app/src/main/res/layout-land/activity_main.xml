@@ -174,11 +174,16 @@
                 android:id="@+id/buttonCE"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_span="2"
                 android:onClick="ce"
                 android:text="CE"
                 android:background="@drawable/boton_redondo2"/>
-
+            <Button
+                android:id="@+id/buttonMod"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="operacion"
+                android:text="%"
+                android:background="@drawable/boton_redondo2"/>
             <Button
                 android:id="@+id/buttonMul"
                 android:layout_width="wrap_content"
@@ -203,7 +208,7 @@
                 android:background="@drawable/boton_edondo3"
                 android:onClick="operacion"
                 android:text="="
-                android:textSize="@android:dimen/app_icon_size" />
+                android:textSize="25dp" />
 
 
 

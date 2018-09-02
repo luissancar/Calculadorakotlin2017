@@ -85,6 +85,14 @@ class MainActivity : AppCompatActivity() {
                      else
                          resultadoIntermedio /= textViewResultado.text.toString().toInt()
                  }
+                 "%" -> {
+                     if (textViewResultado.text.toString().toInt()==0) {
+                         ce(v)
+                         textViewBotton.text=resources.getText(R.string.string_error_division)
+                     }
+                     else
+                         resultadoIntermedio=resultadoIntermedio.rem(textViewResultado.text.toString().toInt())
+                 }
 
                  "*" -> resultadoIntermedio*=textViewResultado.text.toString().toInt()
              }
